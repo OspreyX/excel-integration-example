@@ -12,7 +12,7 @@ To run the example:
 2. Create an app with URL from step 1 in OpenFin Desktop, and start it.  The page should shows that curremt timestamp is being published once per second.  It also shows an App Id, which is needed in step 5.
 3. Start Excel
 4. Load FinDesktopAddin-packed.xll in Excel.
-5. In any cell of Excel, enter function: =FinDesktop("publisher_app_id", "ExcelData", "timestamp").  publish_app_id is from step 2.  The cell should show same timestamp as publish app in step 2.
+5. In any cell of Excel, enter function: =FinDesktop("publisher_app_id", "ExcelData", "timestamp").  publish_app_id is from step 2.  The cell should show same timestamp as publish app in step 3.
 
 
 If you have questions, please contact us at support@openfin.co
