@@ -15,4 +15,4 @@ To run the example:
 5. In any cell of Excel, enter function: =FinDesktop("publisher_app_id", "ExcelData", "timestamp").  publish_app_id is from step 2.  The cell should show same timestamp as publish app in step 2.
 
 
-If you have issues, please contact us at support@openfin.co
+If you have questions, please contact us at support@openfin.co
