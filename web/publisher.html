@@ -1,0 +1,43 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Publisher to Excel</title>
+
+    <script src="jquery-1.7.2.js"></script>
+    <script src="openfin-desktop-2.0.3.js"></script>
+
+
+<script>
+
+ $(function () {
+            // Entry point to the App Desktop
+            fin.desktop.main(function () {
+
+			var app = fin.desktop.Application.getCurrent();
+			$('#appId').text('App ID: ' + app.uuid);
+			setInterval(publish, 1000);
+                }, function () {
+                });
+        });
+
+function publish() {
+	var d = new Date();
+	var publishData = d.toLocaleTimeString();
+	fin.desktop.InterApplicationBus.publish("ExcelData", {timestamp: publishData});
+	$('#status').text('Publishing: ' + publishData);
+}
+</script>
+
+
+</head>
+
+<body>
+
+	<div id='appId'></div>
+	<div id='status'>
+		pulish status
+	</div>
+</body>
+
+</html>
